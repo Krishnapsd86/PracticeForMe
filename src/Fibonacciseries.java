@@ -27,16 +27,16 @@ public class Fibonacciseries {
 			f=g; //1 equal to 2
 			g=h; //2 equa/ to 3rd
 		}
-
-      int i =10;
-      int j=0;
-      int k=3;
-      System.out.print("Class Value :"+j + " "+ k);
-      for (int l=3;l<=i;l++) {
-    	  int result =j + k;
-    	  System.out.print(" ,"+result);
-    	  j =k;
-    	  k=result;
+// Initialize the variables:
+      int i =10;//max limit
+      int j=0;//initial values of the Fibonacci series
+      int k=3;//initial values of the Fibonacci series
+      System.out.print("Class Value :"+j + " "+ k);//Print the initial values
+      for (int l=3;l<=i;l++) {//initializes l with 3 and continues until l reaches the value of i
+    	  int result =j + k;//iteration of loop,Fibonacci series adding the previous two terms
+    	  System.out.print(" ,"+result);//The result is stored and printed
+    	  j =k;//update for next iteration
+    	  k=result;//current value of result becomes the new value of k
 		
 	}
 
