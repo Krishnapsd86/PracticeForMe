@@ -30,13 +30,14 @@ public class reverseForInt {
 	    }
 	    System.out.println(rev);
 	    
+	    //Initialize the variables
 	    int num1=7865438;
 	    int reve=0;
 	    int reme;
-	    while(num1!=0) {
-	    	reme=num1%10;
-	    	reve = reve*10+reme;
-	    	num1=num1/10;
+	    while(num1!=0) {//The loop continues until num1 becomes 0
+	    	reme=num1%10;//each iteration last digit of num1 and extracted stored in the reme
+	    	reve = reve*10+reme;//appended reve variable by multiplying reve by 10 and adding reme.
+	    	num1=num1/10;//The last digit is removed from num1 by dividing by 10,shifting the number to right.
 	    }
 	    System.out.println(reve);
 

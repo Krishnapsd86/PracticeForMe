@@ -21,7 +21,23 @@ public class PrimeNumber {
 		}else {
 			System.out.println(number +" is Not Prime Number");
 		}
+		
+		int prime = 15;//initialized prime number variable
+		int count ;
+		for (int i = 1; i <=prime; i++) {//iterate whether its reminder is zero
+			count=0;
+			for (int j = 2; j <=i/2; j++) {//iterate whether its reminder is zero
+				if (i%j==0) {//if reminder comes zero increase
+					count++;
+					break;
+				}
+			}
+			if (count==0) {//if zero than print
+				System.out.println(i);
+			}
+		}
 
 	}
+	
 	
 }
